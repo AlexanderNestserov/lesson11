@@ -22,15 +22,28 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     background-color: orange;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    background-color: red;
+}
+button:active {
+    position: relative;
+    top: 3px;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-input[type=range] {
+input[type="range"] {
     width: 200px;
     cursor: pointer;
 }
 
-input[type=text] {
+#text {
     padding: 5px;
+    background-color: red;
 }
 
 a {
@@ -38,7 +51,7 @@ a {
     color: rebeccapurple;
     font-weight: bold;
     font-size: 20px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 a:hover {
